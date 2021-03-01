@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'IMAGE_NAME', defaultValue: 'Calculadora-Java', description: 'Name for the image')
+        string(name: 'IMAGE_NAME', defaultValue: 'calculadora-java', description: 'Name for the image')
     }
     
     stages {
