@@ -2,15 +2,17 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'IMAGE_NAME', defaultValue: 'backend-java', description: 'Name for the image')
+        string(name: 'IMAGE_NAME', defaultValue: 'Calculadora-Java', description: 'Name for the image')
     }
-
+    
     stages {
+        /*
         stage ('Build Maven') {
             steps {
                 sh 'mvn clean package'
             }
         }
+        */
         
         stage ('Build Docker Image') {
             steps {
