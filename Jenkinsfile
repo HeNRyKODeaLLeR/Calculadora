@@ -1,10 +1,10 @@
 pipeline {
     agent any
 
-    /* parameters {
+    parameters {
         string(name: 'IMAGE_NAME', defaultValue: 'calculadora-java', description: 'Name for the image') 
     }
-    */
+    
     stages {
         /*
         stage ('Build Maven') {
