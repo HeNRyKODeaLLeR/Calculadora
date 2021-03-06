@@ -12,13 +12,14 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
-        */
+        
         
         stage ('Build Docker Image') {
             steps {
                 sh 'docker build -t "${IMAGE_NAME}" .'
             }
         }
+        */
 
         stage ('Copy Image to Nexus') {
             steps {
